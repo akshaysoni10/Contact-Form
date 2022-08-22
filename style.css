@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 110vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(17, 204, 204, 0.7)), url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 90%;
+    max-width: 500px;
+}
+.input{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 80%;
+    padding: 8px;
+    outline: 0;
+    border: 1px solid rgb(238, 255, 0);
+    color: azure;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: beige;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px;
+    color: rgb(226, 13, 123);
+    outline: none;
+    background: transparent;
+    border: 1px solid rgb(238, 255, 0);
+    width: 80%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.row .input{
+    flex-basis: 222px;
+}
